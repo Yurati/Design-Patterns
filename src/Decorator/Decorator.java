@@ -1,14 +1,14 @@
 package Decorator;
 
 abstract class Decorator implements Component {
-    protected Component component;
+    protected Component baseDecorator;
 
-    Decorator(Component component){
-        this.component = component;
+    Decorator(Component baseDecorator){
+        this.baseDecorator = baseDecorator;
     }
 
     @Override
     public void decorate() {
-        System.out.println("Default");
+        System.out.println("Base Decorator");
     }
 }
