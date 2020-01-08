@@ -1,10 +1,8 @@
 package FactoryMethod;
 
-public class SecondObject implements BaseInterface {
-    private String property = "Second property";
-
+public class SecondObject implements CommonInterface {
     @Override
-    public String getProperty() {
-        return property;
+    public void execute() {
+        System.out.println(SecondObject.class);
     }
 }

@@ -8,5 +8,7 @@ public class Demonstration {
         Decorator decoratorWithAddedBehaviour = new DecoratorImplementation2(decorator);
         decoratorWithAddedBehaviour.decorate();
 
+        Decorator moreBehaviour = new DecoratorImplementation1(decoratorWithAddedBehaviour);
+        moreBehaviour.decorate();
     }
 }

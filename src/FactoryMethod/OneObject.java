@@ -1,9 +1,9 @@
 package FactoryMethod;
 
-public class OneObject implements BaseInterface {
-    private String property = "Property 1";
+public class OneObject implements CommonInterface {
+
     @Override
-    public String getProperty() {
-        return property;
+    public void execute() {
+        System.out.println(OneObject.class);
     }
 }
