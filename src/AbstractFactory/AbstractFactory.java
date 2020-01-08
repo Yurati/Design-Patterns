@@ -1,5 +1,9 @@
 package AbstractFactory;
 
-public interface AbstractFactory {
-    public FirstType getType(String type);
+import AbstractFactory.Pizza.Pizza;
+import AbstractFactory.Salad.Salad;
+
+abstract public class AbstractFactory {
+    public abstract Pizza createPizza();
+    public abstract Salad createSalad();
 }
